@@ -31,9 +31,6 @@ app.get('/success', function (req, res) {
     res.send("Success");
 });
 
-app.get('/verify', function (req, res) {
-    res.redirect('/');
-    
-});
+
 
 app.listen(3000)
