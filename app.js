@@ -14,8 +14,6 @@ app.get('/',(req,res)=>{
 app.post("/", (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
-    // username=== "Admin" ?  res.redirect('/success') :res.redirect('/failure')
-    // password === "admin123" ? res.redirect('/success') :res.redirect('/failure')
     if(username=== "Admin" && password === "admin123"){
         res.redirect('/success')
     }
